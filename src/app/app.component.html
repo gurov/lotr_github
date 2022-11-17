@@ -1,0 +1,40 @@
+
+<div class="rpgui-content rpgui-cursor-default" style="overflow-y:scroll;">
+
+	<div class="rpgui-container framed">
+
+
+    <header>
+      <h1>LoTR characters</h1>
+      <hr class="golden">
+    </header>
+
+    <div>
+      <div style="padding-bottom: 0.5rem;">
+        <input type="text" [(ngModel)]="searchText" placeholder="Type to search...">
+      </div>
+      <ul id="background-select-rpgui-list" class="rpgui-list-imp" style="height: 200px;">
+        <li *ngFor="let c of characters$ | async | filter: searchText"
+          (click)="setSelectedName(c.name_en)"
+          [ngClass]="{'rpgui-selected': c.name_en === selectedName}">{{c.name}}</li>
+      </ul>
+
+    </div>
+
+    <hr>
+
+    <github-user [name]="selectedName | firstWord"></github-user>
+	</div>
+
+	<div class="rpgui-container framed-golden">
+    <github-commits [name]="selectedName | firstWord"></github-commits>
+	</div>
+
+	<div class="rpgui-container framed-golden-2">
+    <p>Read about the project <a target="_blank" href="https://github.com/gurov/lotr_github">here</a>.</p>
+	</div>
+
+</div>
+
+
+

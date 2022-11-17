@@ -1,0 +1,21 @@
+
+<h3>Github user <span *ngIf="loading">⌛</span></h3>
+
+<div class="box" style="display: flex;align-items: flex-start;">
+    <div class="rpgui-container framed-golden" style="padding: 0; border-width: 11px;">
+        <img [src]="user.avatar_url || 'assets/helmet-slot.png'" [alt]="user.login" width="100px" height="100px" />
+    </div>
+    <div class="info">
+        <p *ngIf="errorMessage" style="padding-left: 0.5rem;color: #d52834">
+            {{errorMessage}}
+        </p>
+        <ul *ngIf="!errorMessage">
+            <li *ngIf="user.login"><u>Login:</u> {{user.login}}</li>
+            <li *ngIf="user.name"><u>Name:</u> {{user.name}}</li>
+            <li *ngIf="user.blog"><u>Blog:</u> {{user.blog}}</li>
+            <li *ngIf="user.company"><u>Company:</u> {{user.company}}</li>
+            <li *ngIf="user.location"><u>Location:</u> {{user.location}}</li>
+        </ul>
+        
+    </div>
+</div>

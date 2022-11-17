@@ -1,0 +1,9 @@
+<h3>Github commits <span *ngIf="loading">⌛</span></h3>
+<ul *ngIf="commits.length > 0">
+    <li *ngFor="let c of commits">
+        <a [href]="c.html_url" target="_blank">{{c.sha | slice: 0: 6}}</a> {{c.commit?.message || ''}}
+    </li>
+</ul>
+<p *ngIf="commits.length === 0" style="padding-left: 0.5rem;color: #d52834">
+    {{errorMessage || "Not found"}}
+</p>

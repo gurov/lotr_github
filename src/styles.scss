@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+body, #container {
+    background: #222;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #6d6d6d;
+    text-shadow: 0 1px 0 rgb(255 255 255 / 80%);
+    background: #e7e7e7 url(rpgui/img/background-image-grey.png) 0 0 repeat;
+}
+
+app-root .rpgui-container {
+    position: relative;
+
+    &>.rpgui-content {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+}
+
+.rpgui-list-imp li {
+    height: auto;
+}
+
+ul {
+    padding: 0;
+}
