@@ -1,27 +1,15 @@
 # LotrGithub
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+The project checks the existence of a user on the GitHub with the name of the character from the Lord of the Rings and commits including the character name.
 
-## Development server
+You can try it [here](https://gurov.github.io/lotr_github/).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This funny project was created to demonstrate how the library [Yakbak](https://www.npmjs.com/package/yakbak) works.
 
-## Code scaffolding
+The article with details [here](https://habr.com/en/post/699834/).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Used
+* [the-one-api](https://the-one-api.dev/)
+* [Github REST API](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api)
+* [RPG UI](http://ronenness.github.io/RPGUI/)
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
